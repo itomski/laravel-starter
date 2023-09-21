@@ -14,6 +14,12 @@ use App\Http\Controllers\MainController; // Import des Controllers
 |
 */
 
+// Verweist auf die index-Methode des MainControllers
+Route::get('/', [MainController::class, 'index'])->name('home');
+Route::get('/products', [MainController::class, 'index'])->name('products');
+
+
+/*
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
@@ -34,13 +40,11 @@ Route::get('/hallo2/{name?}', function ($name = 'Unbekannt') {
     return 'Hallo '.$name;
 });
 
-/*
-Route::get($url, $callback)
-Route::post
-Route::put
-Route::delete
-etc.
-*/
+//Route::get($url, $callback)
+//Route::post
+//Route::put
+//Route::delete
+//etc.
 
 // Erlaubt alle HTTP-Methoden
 Route::any('/hallo3', function () {
@@ -73,3 +77,4 @@ Route::get('/hallo7', [MainController::class, 'doSomething']);
 Route::redirect('/welcome', '/');
 
 Route::redirect('/welcome', '/', );
+*/

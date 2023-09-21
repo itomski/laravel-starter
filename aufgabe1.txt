@@ -1,0 +1,8 @@
+Entwicke eine Website, die aus 5 Unterseiten besteht
+
+Seiten: home, products, about, services, kontakt
+Für jede Seite soll eine passende Route geschrieben werden
+Für jede Seite soll eine passende Controller-Methode geschrieben werden
+Für jede Seite soll eine passendes View geschrieben werden
+
+Es soll eine Navigation geben
